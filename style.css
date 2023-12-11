@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.s-screen {
+    --width: 400px;
+    width: var(--width);
+    aspect-ratio: 1.8;
+    background-color: cadetblue;
+    margin: 50px auto;
+    border-radius: var(--width) var(--width) 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#s-needle {
+    width: 150px;
+    height: 6px;
+    background-color: black;
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform-origin: right;
+    transform: rotate(0deg);
+    transition: 5s;
+    /* animation: rotate 6s linear infinite; */
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button{
+    padding: 5px 16px;
+    margin-left: 5px;
+    background-color: aqua;
+    border: 2px solid brown;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.s-pointer {
+    position: absolute;
+    right: -9px;
+    bottom: -7px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.s-n span {
+    position: absolute;
+    transform: rotate(calc(7.5deg * var(--i)));
+    inset: 25px;
+    text-align: center;
+    bottom: -151px;
+    font-size: 12px;
+}
+/* .s-n{
+    
+} */
